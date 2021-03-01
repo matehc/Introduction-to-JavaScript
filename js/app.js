@@ -7,7 +7,7 @@ let counter=0;
 let articleLength = articles.length;
 let textNode = `you have ${counter + articleLength} note(s)`;
 console.log(counter);
-console.log(counter + articleLength)
+console.log(counter + articleLength);
 
 /*
 !=====================================>>>> End of Global Variable Declaration <<<<=======================================
@@ -57,7 +57,8 @@ btn.addEventListener("click", () => {
     let {title, bodyOfNote} = prompter();
 
     // call function that creates and displays note using input
-    noteCreator(title, bodyOfNote);           
+    noteCreator(title, bodyOfNote);   
+    pNode.textContent = `you have ${counter + articleLength} note(s)`        
 });
 
 
