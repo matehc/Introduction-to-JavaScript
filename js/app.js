@@ -6,8 +6,6 @@ let main = document.querySelector("main");
 let counter=0;
 let articleLength = articles.length;
 let textNode = `you have ${counter + articleLength} note(s)`;
-console.log(counter);
-console.log(counter + articleLength);
 
 /*
 !=====================================>>>> End of Global Variable Declaration <<<<=======================================
@@ -15,6 +13,7 @@ console.log(counter + articleLength);
 
 // functionality to display number of notes when the page loads.
 window.addEventListener('load', () => {
+
     addNote_Box.appendChild(pNode).innerText = textNode; 
 });
 
@@ -60,13 +59,3 @@ btn.addEventListener("click", () => {
     noteCreator(title, bodyOfNote);   
     pNode.textContent = `you have ${counter + articleLength} note(s)`        
 });
-
-
-
-
-
-
-
-
-
-
