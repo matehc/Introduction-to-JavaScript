@@ -30,8 +30,6 @@ function noteCreator (titleOfNote, bodyOfNote) {
     let h2Note = document.createElement('h2');
     let divNote = document.createElement('div');
     let articleNote = document.createElement('article');
-    let title = titleOfNote;
-    let body = bodyOfNote;
 
     h2Note.innerText = titleOfNote;
     pNote.innerText = bodyOfNote;
@@ -57,5 +55,5 @@ btn.addEventListener("click", () => {
 
     // call function that creates and displays note using input
     noteCreator(title, bodyOfNote);   
-    pNode.textContent = `you have ${counter + articleLength} note(s)`        
+    pNode.textContent = `you have ${counter + articleLength} note(s)`;        
 });
